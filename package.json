@@ -2,12 +2,7 @@
   "name": "json-server",
   "version": "0.3.3",
   "description": "A simple fake REST API server for testing and prototyping.",
-  "keywords": [
-    "jsonplaceholder",
-    "json-server",
-    "api testing",
-    "endpoint"
-  ],
+  "keywords": [],
   "repository": {
     "type": "git"
   },
