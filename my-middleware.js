@@ -7,20 +7,24 @@ const INITIAL_ELEMENT = {
 
 const limitWriteMiddleware = async (req, res, next) => {
   if (req.method === "POST" && req.path === "/posts") {
-    const serverUrl = process.env.VERCEL_URL || "http://localhost:3000";
-    const response = await fetch(`${serverUrl}/posts`);
+    const response = await fetch(
+      `https://json-server-posts-mgwaf1ecu-codiku.vercel.app/posts`
+    );
     const posts = await response.json();
     if (posts.length >= 10) {
       console.log(" les posts ", posts);
-      await fetch(`${serverUrl}/reset`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          posts: [INITIAL_ELEMENT],
-        }),
-      });
+      await fetch(
+        `https://json-server-posts-mgwaf1ecu-codiku.vercel.app/reset`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            posts: [INITIAL_ELEMENT],
+          }),
+        }
+      );
       return res.status(201).json(INITIAL_ELEMENT);
     } else {
       next();
