@@ -1,30 +1,27 @@
 {
-  "name": "json-server",
-  "version": "0.3.3",
-  "description": "A simple fake REST API server for testing and prototyping.",
-  "keywords": [],
-  "repository": {
-    "type": "git"
-  },
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "node api/server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "clone": "^1.0.2",
-    "json-server": "^0.17.4",
-    "json-server-reset": "^1.6.0",
-    "marked": "^0.6.2"
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.0.4"
   },
   "devDependencies": {
-    "Faker": "~0.5.11",
-    "husky": "^2.4.1",
-    "nodemon": "^1.19.1",
-    "pupa": "^2.0.0",
-    "rosie": "~1.6.0",
-    "showdown": "^1.9.0",
-    "supertest": "^3.1.0",
-    "tape": "^4.5.1",
-    "underscore": "~1.5.2"
-  },
-  "license": "MIT"
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
+  }
 }

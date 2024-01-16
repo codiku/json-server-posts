@@ -1,9 +1,0 @@
-{
-  "posts": [
-    {
-      "id": 1,
-      "title": "This database is cleared after 10 records",
-      "body": "Better be safe than sorry"
-    }
-  ]
-}
