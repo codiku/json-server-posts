@@ -7,8 +7,7 @@
     "type": "git"
   },
   "scripts": {
-    "start": "node api/server.js",
-    "install": "npm install --force"
+    "start": "node api/server.js"
   },
   "dependencies": {
     "clone": "^1.0.2",
