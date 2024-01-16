@@ -31,8 +31,5 @@
     "tape": "^4.5.1",
     "underscore": "~1.5.2"
   },
-  "engines": {
-    "node": "10.x"
-  },
   "license": "MIT"
 }
