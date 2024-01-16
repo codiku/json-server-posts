@@ -19,7 +19,7 @@ export const POST = async (req: NextRequest) => {
       posts = [...DB]; // Reset the database if there are 10 or more posts
       return NextResponse.json(posts[0]);
     } else {
-      if (newPost.title && newPost.auth) {
+      if (newPost.title && newPost.author) {
         const postWithId = { ...newPost, id: posts.length + 1 };
         posts.push(postWithId);
         return NextResponse.json(postWithId);
