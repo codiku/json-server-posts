@@ -11,8 +11,8 @@ server.use(
     readOnly: false,
   })
 );
-server.use(reset);
-server.use(limitWriteMiddleware);
+// server.use(reset);
+// server.use(limitWriteMiddleware);
 server.db = router.db;
 server.use(router);
 server.listen(3000, () => {
