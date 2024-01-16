@@ -1,6 +1,6 @@
 const jsonServer = require("json-server");
 const reset = require("json-server-reset");
-const { limitWriteMiddleware } = require("../middleware");
+const { limitWriteMiddleware } = require("../my-middleware");
 // create json server and its router first
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
